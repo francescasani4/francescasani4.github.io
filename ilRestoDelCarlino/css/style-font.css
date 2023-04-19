@@ -1,0 +1,11 @@
+/* FONT PER HEADER */
+@font-face {
+    font-family: 'Inter';
+    src: url("../font/Inter-VariableFont_slnt_wght.otf") format("opentype");
+}
+
+/* FONT PER HOMEPAGE */
+@font-face {
+    font-family: 'Roboto';
+    src: url("../font/RobotoCondensed-Regular.otf") format("opentype");
+}
