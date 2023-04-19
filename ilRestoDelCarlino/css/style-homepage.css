@@ -64,6 +64,13 @@
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px){
+    .title-header{
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
 .title-link-article-1:hover{
     color: #525252;
 }
@@ -208,6 +215,13 @@
 .blue-link:hover, .blue-link-XL:hover{
     color: #005AC7;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 767px){
+    .black-link-XL, .blue-link-XL{
+        font-size: 30px;
+        line-height: 36px;
+    }
 }
 
 .body-article{
