@@ -356,8 +356,7 @@ header{
     align-items: center;
     column-gap: 20px;
     list-style-type: none;
-    font-weight: 600;
-    overflow-x: scroll;
+    overflow: scroll;
     height: 44px;
 }
 
@@ -377,7 +376,10 @@ header{
     white-space: nowrap;
     background-color: transparent;
     font-size: 16px;
-    font-weight: 600;
+}
+
+.link-list-button:hover{
+    color: #005AC7;
 }
 
 .link-list-button svg{
@@ -394,7 +396,7 @@ header{
     width: 100%;
     padding: 0 12px;
     order: 5;
-    overflow-x: scroll;
+    overflow: scroll;
 }
 
 .header-list{
