@@ -176,7 +176,6 @@ header{
     align-items: center;
     border-top: 1px solid #d3d3d3;
     padding: 30px 16px;
-    order: 3;
 }
 
 @media screen and (max-width: 1023px){
@@ -285,8 +284,6 @@ header{
     border-top: 1px solid #d3d3d3;
     margin: 0 auto;
     width: 100%;
-    order: 4;
-    overflow-x: scroll;
 }
 
 @media screen and (min-width: 1023px){
@@ -360,6 +357,10 @@ header{
     height: 44px;
 }
 
+.header-link-list::-webkit-scrollbar{
+    display: none;
+}
+
 .link-list-item{
     padding: 12px 0;
     white-space: nowrap;
@@ -395,8 +396,11 @@ header{
     margin: 0 auto;
     width: 100%;
     padding: 0 12px;
-    order: 5;
     overflow: scroll;
+}
+
+.header-4::-webkit-scrollbar{
+    display: none;
 }
 
 .header-list{
