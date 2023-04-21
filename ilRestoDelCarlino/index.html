@@ -12,6 +12,63 @@
     <link rel="stylesheet" href="css/style-font.css" type="text/css" media="screen"/>
     <link rel="shortcut icon" href="images/logo.ico">
 
+    <!-- SCRIPT -->
+    <script>
+        /* FUNZIONE PER DROPDOWN MENU HEADER */
+        function myFunction(){
+            document.getElementById("DropDown-header").classList.toggle("show");
+        }
+
+        window.onclick = function(e){
+            if(!e.target.matches('.button-dropdown')){
+                var DropDown = document.getElementById("DropDown-header");
+                if(DropDown.classList.contains('show')){
+                    DropDown.classList.remove('show');
+                }
+            }
+        }
+
+        /* FUNZIONE PER DROPDOWN MENU FOOTER */
+        function myFunction1(){
+            document.getElementById("DropDown-footer1").classList.toggle("show");
+        }
+
+        window.onclick = function(e){
+            if(!e.target.matches('.link-title-small')){
+                var DropDown = document.getElementById("DropDown-footer1");
+                if(DropDown.classList.contains('show')){
+                    DropDown.classList.remove('show');
+                }
+            }
+        }
+
+        function myFunction2(){
+            document.getElementById("DropDown-footer2").classList.toggle("show");
+        }
+
+        window.onclick = function(e){
+            if(!e.target.matches('.link-title-small')){
+                var DropDown = document.getElementById("DropDown-footer2");
+                if(DropDown.classList.contains('show')){
+                    DropDown.classList.remove('show');
+                }
+            }
+        }
+
+        function myFunction3(){
+            document.getElementById("DropDown-footer3").classList.toggle("show");
+        }
+
+        window.onclick = function(e){
+            if(!e.target.matches('.link-title-small')){
+                var DropDown = document.getElementById("DropDown-footer3");
+                if(DropDown.classList.contains('show')){
+                    DropDown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
     <title>Il Resto del Carlino</title>
 </head>
 <body>
@@ -134,11 +191,30 @@
                             <li class="link-list-item">
                                 <a href="#"> Cultura e spettacoli </a>
                             </li>
-                            <button class="link-list-button"> Speciali
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </button>
+                            <!-- MENU A TENDINA ONCLICK -->
+                            <li class="link-list-item">
+                                <div class="dropdown-list">
+                                    <button class="button-dropdown" onclick="myFunction()">
+                                        Speciali
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                    <div id="DropDown-header" class="dropdown-link">
+                                        <a href="#"> QN Mobilità </a>
+                                        <a href="#"> Top Aziende </a>
+                                        <a href="#"> Cronisti in Classe </a>
+                                        <a href="#"> Premio Mascagni </a>
+                                        <a href="#"> Top 500 Bologna </a>
+                                        <a href="#"> Top 500 Romagnola </a>
+                                        <a href="#"> Alfasigma </a>
+                                        <a href="#"> Distretti </a>
+                                        <a href="#"> Podcast </a>
+                                        <a href="#"> Teatri in regione </a>
+                                        <a href="#"> Salone del mobile </a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
@@ -1325,28 +1401,44 @@
                 </div>
                 <div class="footer-link-small">
                     <div class="link-box-small">
-                        <p class="link-title-small">
+                        <p class="link-title-small" onclick="myFunction1()">
                             CATEGORIE
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </p>
+                        <div id="DropDown-footer1" class="dropdown-small">
+                            <a href="#"> Contatti </a>
+                            <a href="#"> Lavora Con Noi </a>
+                            <a href="#"> Concorsi </a>
+                        </div>
                     </div>
                     <div class="link-box-small">
-                        <p class="link-title-small">
+                        <p class="link-title-small" onclick="myFunction2()">
                             ABBONAMENTI
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </p>
+                        <div id="DropDown-footer2" class="dropdown-small">
+                            <a href="#"> Digitale </a>
+                            <a href="#"> Cartaceo </a>
+                            <a href="#"> Offerte Promozionali </a>
+                        </div>
                     </div>
-                    <div class="link-box-small">
-                        <p class="link-title-small">
+                    <div class="link-box-small border-remove">
+                        <p class="link-title-small" onclick="myFunction3()">
                             PUBBLICITÀ
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </p>
+                        <div id="DropDown-footer3" class="dropdown-small">
+                            <a href="#"> Speed Adv </a>
+                            <a href="#"> Network </a>
+                            <a href="#"> Annunci </a>
+                            <a href="#"> Aste E Gare </a>
+                        </div>
                     </div>
                 </div>
             </div>

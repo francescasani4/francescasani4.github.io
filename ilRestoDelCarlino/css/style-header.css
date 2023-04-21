@@ -389,6 +389,74 @@ header{
     margin-left: 4px;
 }
 
+/* MENU A TENDNA ONCLICK HEADER */
+.dropdown-list{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: transparent;
+    font-size: 16px;
+    white-space: nowrap;
+    margin: 0;
+    color: #000000;
+}
+
+.button-dropdown{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 16px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.button-dropdown:hover{
+    color: #005AC7;
+}
+
+.button-dropdown svg{
+    height: 18px;
+    width: 18px;
+    margin-left: 4px;
+}
+
+.dropdown-link{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    padding: 16px;
+    box-shadow: 0 2px 12px #525252;
+    min-width: 200px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 900px){
+    .dropdown-link{
+        left: auto;
+        right: 16px;
+    }
+}
+
+.dropdown-link a{
+    float: none;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.dropdown-link a:hover{
+    color: #005AC7;
+}
+
+.show{
+    display: block;
+}
+
 /* HEADER-4 */
 .header-4{
     display: flex;

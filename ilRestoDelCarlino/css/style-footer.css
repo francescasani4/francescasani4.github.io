@@ -162,10 +162,15 @@ footer{
     .footer-link-small{
         display: block;
     }
+
     .link-box-small{
         font-size: 16px;
         font-weight: 600;
         border-bottom: 1px solid hsl(0deg 0% 98% / 15%);
+    }
+
+    .border-remove{
+        border-bottom: none;
     }
 
     .link-title-small{
@@ -176,6 +181,35 @@ footer{
         padding-bottom: 10px;
         opacity: .6;
     }
+
+    .link-box-small{
+        overflow: hidden;
+    }
+
+    .link-box-small{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .dropdown-small{
+        display: none;
+        z-index: 1;
+        background-color: #005AC7;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-small a{
+        float: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .show{
+        display: block;
+    }
+
 }
 
 /* FOOTER-INFO */
